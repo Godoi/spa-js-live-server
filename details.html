@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="./node_modules/toastr/build/toastr.min.css" rel="stylesheet">
     <link href="./src/assets/css/style.css" rel="stylesheet">
-    <link href="./src/assets/css/list.css" rel="stylesheet">
+    <link href="./src/assets/css/detail.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <base href="/">
     <title>UNICRED - Instituição financeira cooperativa</title>
@@ -40,31 +40,39 @@
       </div>
     </header>
     <div data-container>
-      <section class="list">
+      <section class="detail">
         <div class="header-section bg-dark-slate-gray">
           <div class="container">
-            <h1>Lista dos repositórios</h1>
+            <h1>Detalhes</h1>
           </div>
         </div>
-        <div class="container container-list bg-gray-lightest">
-          <div class="header-list">
-            <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Selecione um usuário
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2"><!-- --></div>
-            </div>          
+
+        <div class="container container-detail bg-gray-lightest">
+
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <h2> Contributors <small> acima 100 </small></h2>
+                  <ul id="oneHundred" class="list-group"><!-- --></ul>
+
+                  <h2> Contributors <small> acima 200 </small></h2>
+                  <ul id="twoHundred" class="list-group"><!-- --></ul>
+
+                  <h2> Contributors <small> acima 500 </small></h2>
+                  <ul id="fiveHundred" class="list-group">><!-- --></ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <h2> Issues </h2>
+                  <ul id="issues" class="list-group"><!-- --></ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <table class="table table-bordered">
-            <thead class="bg-dark-slate-gray">
-              <tr>
-                <th scope="col">#ID</th>
-                <th scope="col">Repositórios</th>
-                <th scope="col">Detalhe</th>
-              </tr>
-            </thead>
-            <tbody class="table-white"></tbody>
-          </table>
         </div>
       </section>
     </div>
@@ -75,5 +83,5 @@
   
   <script src="./node_modules/toastr/build/toastr.min.js"></script>
   <script src="./node_modules/axios/dist/axios.js"></script>
-  <script type="module" src="/src/modules/list/index.js"></script>
+  <script type="module" src="/src/modules/detail/index.js"></script>
 </html>

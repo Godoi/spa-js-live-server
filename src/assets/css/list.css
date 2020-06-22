@@ -4,3 +4,8 @@
 .table-white{
   background-color: #fff;
 }
+.header-list{
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+}
