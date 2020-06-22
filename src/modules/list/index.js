@@ -34,12 +34,17 @@ const embedTable = (user) => {
   let response = getRepos(user);
   response.then(result => { 
     if(result){
+      const tbList = document.getElementById('tbList');
+      tbList.classList.remove('hidden');
       const tbody = document.querySelector('tbody');
       tbody.innerHTML = '';
       result.data.forEach(item => {
         tbody.appendChild(innerRow(item,user));
       });
-    }          
+    } else {
+      const tbList = document.querySelector('tbList');
+      tbList.classList.add('hidden');
+    }   
   }).catch(function (error) {
     console.warn('ERROR getRepos: ', error);
     return false;
