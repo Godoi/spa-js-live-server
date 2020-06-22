@@ -20,7 +20,6 @@ const contributors = (user,repo) => {
   let response = getContributors(user,repo);
   response.then(result => { 
     if(result){
-      console.log('result ',result);
       let oneHundred = result.data.filter(aboveOneHundred);
       let twoHundred = result.data.filter(aboveTwoHundred);
       let fiveHundred = result.data.filter(aboveFiveHundred);
@@ -110,4 +109,3 @@ const innernoItem = () => {
   </li>`
   return li;
 }
-

@@ -40,7 +40,7 @@ export const errorMessages = {
     [VALUE_MISSING]: "A cidade é necessária"
   },
   [typeInput.DISTRICT]: {
-    [VALUE_MISSING]: "O bairro é necessária"
+    [VALUE_MISSING]: "O bairro é necessário"
   },
   [typeInput.UF]: {
     [VALUE_MISSING]: "O estado é necessário"

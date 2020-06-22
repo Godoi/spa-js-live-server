@@ -36,7 +36,6 @@ const embedTable = (user) => {
     if(result){
       const tbody = document.querySelector('tbody');
       tbody.innerHTML = '';
-      console.log(result);
       result.data.forEach(item => {
         tbody.appendChild(innerRow(item,user));
       });
