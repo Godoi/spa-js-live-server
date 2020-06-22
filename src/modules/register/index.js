@@ -1,6 +1,5 @@
-import { validate } from './validate.js';
-import { eventSubmit } from '../../modules/register/register.js'
-//const { default: eventSubmit } = require("../../modules/register/register.js");
+import { validate } from '../../core/validate/validate.js';
+import { eventSubmit } from './register.js'
 
 window.onload = function () {
   toastr.options = {
