@@ -1,0 +1,21 @@
+{
+  "name": "spa-js",
+  "version": "0.0.1",
+  "description": "JS: Creating a SPA with pure JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "live-server"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Anderson Godoi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "live-server": "^1.2.1",
+    "jquery": "^2.1.1",
+    "toastr": "^2.1.4"
+  }
+}

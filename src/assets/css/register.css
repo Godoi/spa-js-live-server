@@ -1,0 +1,36 @@
+.register {
+  padding: 0 0 120px;
+  min-height: 449px;
+  overflow: hidden;
+  position: relative;
+}
+.register legend {width: initial;}
+.register .header-section h1{
+  margin: 0;
+}
+.register .container-form{
+  padding: 70px 65px;
+}
+.register fieldset{
+  margin-bottom: 40px;
+}
+.register .group-form-2 label{
+  width: 48%;
+}
+.register .group-form-3 label{
+  width: 30%;
+}
+.register .group{
+  width: 100%;
+}
+.register .form-footer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 992px){
+  .register .container-form {
+    padding: 50px 40px;
+    width: 80%;
+  }
+}
