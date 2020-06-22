@@ -1,4 +1,6 @@
 import { validate } from './validate.js';
+import { eventSubmit } from '../../modules/register/register.js'
+//const { default: eventSubmit } = require("../../modules/register/register.js");
 
 window.onload = function () {
   toastr.options = {
@@ -7,6 +9,9 @@ window.onload = function () {
     "preventDuplicates": true,
     "positionClass": "toast-top-center",
   }
+
+  let form = document.querySelector('form');
+  eventSubmit(form);
   const inputs = document.querySelectorAll('input');
   inputs.forEach(input => {
     input.addEventListener('invalid', (e) => {
@@ -20,4 +25,5 @@ window.onload = function () {
       validate(input);
     });
   });
+  
 }
